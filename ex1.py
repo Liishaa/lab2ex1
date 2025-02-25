@@ -31,13 +31,11 @@ with col2:
 col1,col2=st.columns(2)
 with col1:
     st.subheader("Sales Data")
-with col2:
     st.dataframe(df)
 
 # Chart
 col1,col2=st.columns(2)
-with col1:
+with col2:
     st.subheader("Sales by Category")
     category_sales = df.groupby('Category')['Total'].sum().reset_index()
-with col1:
     st.bar_chart(category_sales.set_index('Category'))
