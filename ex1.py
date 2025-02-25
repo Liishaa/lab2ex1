@@ -34,7 +34,6 @@ with col1:
     st.dataframe(df)
 
 # Chart
-col1,col2=st.columns(2)
 with col2:
     st.subheader("Sales by Category")
     category_sales = df.groupby('Category')['Total'].sum().reset_index()
