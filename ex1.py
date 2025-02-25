@@ -1,3 +1,7 @@
+#import streamlit as st
+import pandas as pd
+import numpy as np
+import streamlit as st
 data = {
     'Order ID': range(1, 21),
     'Product': ['Laptop', 'Phone', 'Tablet', 'Monitor', 'Headphones'] * 4,
